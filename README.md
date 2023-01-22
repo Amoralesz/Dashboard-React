@@ -56,9 +56,9 @@ As mentioned above, there are a number of ways to host your project for free. We
 
 ## Ejecutar Proyecto 
 
-npm start
+## npm start
 
-Para ejecutar la aplicación en el modo de desarrollo http://localhost:3000 para visualizar en el navegador 
+Para ejecutar la aplicación en el modo de desarrollo http://localhost:3000 y visualizar en el navegador 
 
 ## Proyecto Desplegado en Vercel
 
