@@ -50,7 +50,7 @@ body {
   background-color: var(--primary-color);
 }
 
-/* Utility Class */
+
 .container {
   padding: 0 2rem;
   min-width: 320px;
@@ -109,7 +109,7 @@ body {
   margin-right: 0.8rem;
 }
 
-/* Text Utility Class */
+
 .text-red {
   color: var(--Bright-Red);
   font-weight: 700;
@@ -187,7 +187,7 @@ body {
   }
 }
 
-/* COMPONENTS */
+/* COMPONENTES */
 .theme {
   display: flex;
   justify-content: space-between;
@@ -238,8 +238,7 @@ body {
   left: 25px;
 }
 
-/* LAY-OUT */
-/* MAIN SECTION */
+
 .main {
   position: relative;
   top: -5rem;
@@ -275,7 +274,7 @@ body {
   align-items: center;
 }
 
-/* Overview  */
+
 .section__overview {
   padding-top: 3rem;
 }
@@ -314,7 +313,7 @@ body {
   align-items: center;
 }
 
-/* Footer */
+
 .attribution {
   font-size: 16px;
   text-align: center;

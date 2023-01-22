@@ -29,18 +29,18 @@ if(currentTheme) {
     }
 }
 
-/* Counter increment */
+/* Contador incrementable */
 
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
-   //set the value of counter innerText to 0
+   //Valor del contador innerText a 0
   counter.innerText = "0";
 
   const updateCounter = () => {
-      //store the data target and convert in numbers using +
+      //Guardar el valor de destino y convertir en números utilizando +.
       const target = +counter.getAttribute('data-target');
-      //store in variable the counter text and convert in numbers using +
+      //Guardar en una variable el texto del contador y convertirlo en números usando +.
       const c = +counter.innerText;
 
       const increment = target / 250
