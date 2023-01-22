@@ -1,43 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- muestra el sitio de forma adecuada en la pantalla, según el dispositivo del usuario-->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Prueba Tecnica]</title>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Inicio de la cabecera -->
+    <header class="header">
+      <div class="container">
+        <!-- Inicio del título de cabecera -->
+        <div class="header__container">
+          <div class="header__title">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+          </div>
+          <!-- Fin del cabecera -->
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <hr />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          <!-- Cambiar tema de dashboard -->
+          <div class="theme">
+            <p class="theme__name">Dark Mode</p>
+            <input type="checkbox" class="theme__switch" />
+          </div>
+         <!-- Fin de tema dashboard -->
+        </div>
+      </div>
+    </header>
+    <!-- Fin de cabecera -->
+
+    <main class="main">
+      <div class="section container">
+          <div class="grid">
+            <article class="social facebook flow-content">
+              <div class="social__iconHero">
+                <img src="images/icon-facebook.svg" alt="facebook logo" class="spacer">
+                <p class="text-lighter text-lighter--bold">@nathanf</p>
+              </div>
+
+              <div class="social__followers">
+                <h2 class="text-Xlarge counter" data-target="1987"></h2>
+                <h4 class="text-medium text-lighter">Followers</h4>
+              </div>
+
+              <div class="social__results">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">12 Today</p>
+              </div>
+            </article>
+
+            <article class="social twitter flow-content">
+              <div class="social__iconHero">
+                <img src="images/icon-twitter.svg" alt="twitter logo" class="spacer">
+                <p class="text-lighter text-lighter--bold">@nathanf</p>
+              </div>
+
+              <div class="social__followers">
+                <h2 class="text-Xlarge counter" data-target="1044"></h2>
+                <h4 class="text-medium text-lighter">Followers</h4>
+              </div>
+
+              <div class="social__results">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">99 Today</p>
+              </div>
+            </article>
+
+            <article class="social instagram flow-content">
+              <div class="social__iconHero">
+                <img src="images/icon-instagram.svg" alt="instagram logo" class="spacer">
+                <p class="text-lighter text-lighter--bold">@realnathanf</p>
+              </div>
+
+              <div class="social__followers">
+                <h4 class="text-Xlarge"><span class=" counter" data-target="11"></span><span class="text-Xlarge">k</span></h4>
+                <h4 class="text-medium text-lighter">Followers</h4>
+              </div>
+
+              <div class="social__results">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">1099 Today</p>
+              </div>
+            </article>
+
+            <article class="social youtube flow-content">
+              <div class="social__iconHero">
+                <img src="images/icon-youtube.svg" alt="youtube logo" class="spacer">
+                <p class="text-lighter text-lighter--bold">Nathan F.</p>
+              </div>
+
+              <div class="social__followers">
+                <h2 class="text-Xlarge counter" data-target="8239"></h2>
+                <h4 class="text-medium text-lighter">subscribers</h4>
+              </div>
+
+              <div class="social__results">
+                <img src="images/icon-down.svg" alt="arrow down" class="spacer">
+                <p class="text-red">144 Today</p>
+              </div>
+            </article>
+          </div>
+      </div>
+
+      <section class="section__overview container">
+          <h2 class="section__title">Overview - Today</h2>
+          <div class="grid">
+            <article class="overview">
+                <h4 class="overview__title text-lighter text-lighter--bold text-lighter text-lighter--bold">Page Views</h4>
+                <img src="images/icon-facebook.svg" alt="facebook logo" class="overview__logo">
+                <h5 class="overview__status text-large counter" data-target="87"></h5>
+                <div class="overview__info">
+                  <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                  <p class="text-green">3%</p>
+                </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Likes</h4>
+              <img src="images/icon-facebook.svg" alt="facebook logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="52"></h5>
+              <div class="overview__info">
+                <img src="images/icon-down.svg" alt="arrow down" class="spacer">
+                <p class="text-red">2%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Likes</h4>
+              <img src="images/icon-instagram.svg" alt="instagram logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="5462"></h5>
+              <div class="overview__info">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">2257%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Profile Views</h4>
+              <img src="images/icon-instagram.svg" alt="instagram logo" class="overview__logo">
+              <h5 class="overview__status text-large"><span class="counter" data-target="52"></span><span>k</span></h5>
+              <div class="overview__info">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">1375%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Retweets</h4>
+              <img src="images/icon-twitter.svg" alt="twitter logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="117"></h5>
+              <div class="overview__info">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">303%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Likes</h4>
+              <img src="images/icon-twitter.svg" alt="twitter logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="507"></h5>
+              <div class="overview__info">
+                <img src="images/icon-up.svg" alt="arrow up" class="spacer">
+                <p class="text-green">553%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Likes</h4>
+              <img src="images/icon-youtube.svg" alt="youtube logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="107"></h5>
+              <div class="overview__info">
+                <img src="images/icon-down.svg" alt="arrow down" class="spacer">
+                <p class="text-red">19%</p>
+              </div>
+            </article>
+            <article class="overview">
+              <h4 class="overview__title text-lighter text-lighter--bold">Total Views</h4>
+              <img src="images/icon-youtube.svg" alt="youtube logo" class="overview__logo">
+              <h5 class="overview__status text-large counter" data-target="1407"></h5>
+              <div class="overview__info">
+                <img src="images/icon-down.svg" alt="arrow down" class="spacer">
+                <p class="text-red">12%</p>
+              </div>
+            </article>
+          </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Amoralesz" target="_blank">Andrea Morales Zarate</a>.
+    </div>
+     <!-- Script -->
+     <script src="src/App.js"></script>
   </body>
 </html>
